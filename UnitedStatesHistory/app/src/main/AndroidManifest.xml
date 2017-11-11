@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.us.mattfein.ushistory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".RSS.RssService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Wars.Civil.civil"
+            android:label="Civil War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.mexican.mexican"
+            android:label="Mexican-American War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.eighteentwelve.eighteen"
+            android:label="War of 1812"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Spanish.span"
+            android:label="Spanish-American War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.WWI.wwi"
+            android:label="World War I"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.WWII.wwii"
+            android:label="World War II"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Korea.korea"
+            android:label="Korean War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Gulf.gulf"
+            android:label="Gulf War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Afghan.afghan"
+            android:label="War in Afghanistan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Iraq.iraq"
+            android:label="Iraq War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Revolution.rev"
+            android:label="Revolutionary War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wars.Vietnam.nam"
+            android:label="Vietnam War"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Ihaveadream.mlk"
+            android:label="@string/title_activity_mlk"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Marshall.marshallplan"
+            android:label="@string/title_activity_marshallplan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.TrumanDoc.truman"
+            android:label="@string/title_activity_truman"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.ZimmNote.zimmerman"
+            android:label="@string/title_activity_zimmerman"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Corollary.corollary"
+            android:label="@string/title_activity_corollary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Emancipation.emancipation"
+            android:label="@string/title_activity_emancipation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Gettysburg.gettysburg"
+            android:label="@string/title_activity_gettysburg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Carolina.carolina"
+            android:label="@string/title_activity_carolina"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.usConstitution.constitution"
+            android:label="@string/title_activity_constitution"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Articles.articles"
+            android:label="@string/title_activity_articles"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Documents.docproper.Declaration.declaration"
+            android:label="@string/title_activity_declaration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".PresidentsPack.GW"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JA"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.TJ" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JMA" android:screenOrientation="portrait" />
+        <activity android:name=".PresidentsPack.JMO" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JQA" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.AJ" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.MVB" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.WHH" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JT" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JKP" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.ZT" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.MF" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.FP" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JB" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.AL" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.Ajo" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.UG" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.RBH" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JG" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.CA" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.GC" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.WM" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.BH" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.TR" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.WT" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.WW" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.WH" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.CC" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.HH" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.FDR" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.HT" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.DE" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JFK" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.LBJ" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.RN" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.GF" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.JC" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.RR" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.GHB" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.BC" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.GWB" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.BO" android:screenOrientation="portrait"/>
+        <activity android:name=".PresidentsPack.DT" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Marbury.Marbury"
+            android:label="@string/title_activity_marbury"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.McCulloch.McCulloch"
+            android:label="@string/title_activity_mc_culloch"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Ogden.Ogden"
+            android:label="@string/title_activity_ogden"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Dred.DredScott"
+            android:label="@string/title_activity_dred_scott"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.CivilCases.CivilRightsCases"
+            android:label="@string/title_activity_civil_rights_cases"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Plessy.Plessy"
+            android:label="@string/title_activity_plessy"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Securitiescase.NorthernSecurities"
+            android:label="@string/title_activity_northern_securities"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.LochnerNY.Lochner"
+            android:label="@string/title_activity_lochner"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.MullerCase.Muller"
+            android:label="@string/title_activity_muller"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.SchenkCase.Schenk"
+            android:label="@string/title_activity_schenk"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.GitlowNY.Gitlow"
+            android:label="@string/title_activity_gitlow"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.KorematsuJaps.Korematsu"
+            android:label="@string/title_activity_korematsu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.BrownEd.Brown"
+            android:label="@string/title_activity_brown"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.GideonWainwright.Gideon"
+            android:label="@string/title_activity_gideon"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Escobedo.Escobedo"
+            android:label="@string/title_activity_escobedo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.RoeWade.Roe"
+            android:label="@string/title_activity_roe"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.BushGore.BushvGore"
+            android:label="@string/title_activity_bushv_gore"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SupremeCourt.SupremeProper.Miranda.Miranda"
+            android:label="@string/title_activity_miranda"
+            android:theme="@style/AppTheme.NoActionBar"
+android:screenOrientation="portrait" />
+        <activity android:name=".Quiz"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TodayHistory"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

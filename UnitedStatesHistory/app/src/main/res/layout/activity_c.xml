@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.us.mattfein.ushistory.PresidentsPack.CA">
+
+    <!--caFocus-->
+    <RelativeLayout
+        android:id="@+id/caCardFocus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:gravity="top">
+        <android.support.v7.widget.CardView
+            android:id="@+id/ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/capic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="35dp"
+                    app:srcCompat="@drawable/carthur" />
+
+                <TextView
+                    android:id="@+id/catext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="31dp"
+                    android:layout_toEndOf="@+id/capic"
+                    android:fontFamily="Roboto"
+                    android:text="Chester A. Arthur"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:textColor="#000000"/>
+
+                <!--<ImageView-->
+                <!--android:id="@+id/caparty"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:srcCompat="@drawable/repub" />-->
+
+                <TextView
+                    android:id="@+id/cayears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:text="1881-1885" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cainfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="8dp"
+            android:layout_below="@+id/ca">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cabio"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"  />
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

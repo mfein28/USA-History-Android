@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dayHistory"
+            android:icon="@drawable/calendar"
+            android:title="This Day In History" />
+
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/quizpic"
+            android:title="Trivia"/>
+
+
+        </group>
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Documents"
+            android:icon="@drawable/constitution"
+            android:title="Documents" />
+
+        <item
+            android:id="@+id/presidents"
+            android:icon="@drawable/presidents"
+            android:title="Presidents" />
+
+        <item
+            android:id="@+id/landmarkSupreme"
+            android:icon="@drawable/supreme"
+            android:title="Supreme Court Cases"/>
+
+        <item
+            android:id="@+id/wars"
+            android:icon="@drawable/cannon"
+            android:title="Wars" />
+
+
+        </group>
+
+
+
+</menu>
