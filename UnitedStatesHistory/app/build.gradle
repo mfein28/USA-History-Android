@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.US.mattfein.unitedstateshistory"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 13
-        versionName "1.5"
+        versionName "1.6"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -23,22 +23,18 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile files('libs/YouTubeAndroidPlayerApi.jar')
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.google.android.gms:play-services-games:11.4.2'
-    compile 'com.android.support:customtabs:25.3.1'
-    compile 'com.github.sundeepk:compact-calendar-view:2.0.2.2'
-    compile 'com.google.android.gms:play-services:11.4.2'
-    compile 'com.google.android.gms:play-services-ads:10.2.4'
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.google.android.gms:play-services-games:11.4.2'
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'com.github.sundeepk:compact-calendar-view:2.0.2.2'
+    implementation 'com.google.android.gms:play-services:11.4.2'
+    implementation 'com.google.android.gms:play-services-ads:10.2.4'
+    testImplementation 'junit:junit:4.12'
 
 }
